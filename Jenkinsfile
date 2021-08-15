@@ -2,9 +2,19 @@ pipeline {
   agent any
   stages {
     stage('Lint') {
-      steps {
-        echo 'Hello World '
-        mail(subject: 'Pipeline Mailers', body: 'Welcome on CI', to: 'ahmed.rashwan2014@yahoo.com', from: 'Jenkins@wuilt.com')
+      parallel {
+        stage('Lint') {
+          steps {
+            echo 'Hello World '
+          }
+        }
+
+        stage('Lint Step 1') {
+          steps {
+            echo 'Lint Step1 '
+          }
+        }
+
       }
     }
 
