@@ -1,16 +1,22 @@
 {
   "name": "mongo",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is a test repo",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Ahmed Rashwan",
+  "keywords": [
+    "Ahmed Rashwan",
+    "test",
+    "freecodecamp"
+  ],
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "moment": "^2.29.1",
     "mongoose": "^5.3.4"
   }
 }
